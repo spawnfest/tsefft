@@ -1,0 +1,8 @@
+{"1.1.0",
+[{<<"espace">>,{pkg,<<"espace">>,<<"0.5.0">>},0},
+ {<<"etsmgr">>,{pkg,<<"etsmgr">>,<<"0.1.0">>},1}]}.
+[
+{pkg_hash,[
+ {<<"espace">>, <<"29BC14E4A78BC258D173EC614ECFEBD572550DAB7AA82B153C808BF4914A49E4">>},
+ {<<"etsmgr">>, <<"16183699D0EB2CA3E320D899F236DC43C9807A792EBF611F9A21DFA958BE5C20">>}]}
+].

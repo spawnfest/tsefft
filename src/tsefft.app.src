@@ -1,0 +1,15 @@
+{application, tsefft,
+ [{description, "Tuple Space based Erlang application for FFT"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  {maintainers, ["Fred Youhanaie"]},
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
