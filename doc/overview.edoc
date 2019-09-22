@@ -1,0 +1,13 @@
+
+@author Fred Youhanaie <fyrlang@anydata.co.uk>
+@copyright 2019 Fred Youhanaie
+@version 0.1.0
+
+@doc
+
+<h3>Introduction</h3>
+
+This is (was meant to be) a collection of modules/functions to perform
+Discrete Fourier Transforms (DFT) and Fast Fourier Transforms (FFT).
+
+The main module is `tsefft_dft`.
