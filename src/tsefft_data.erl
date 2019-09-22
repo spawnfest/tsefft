@@ -8,6 +8,9 @@
 %%% The data will be generated sequentially rather than making use of
 %%% `espace' for speed up.
 %%%
+%%% Please note that this module was created at the start of the
+%%% project for experimentations. It is not of significant use.
+%%%
 %%% @end
 %%% Created : 21 Sep 2019 by Fred Youhanaie <fyrlang@anydata.co.uk>
 %%%-------------------------------------------------------------------
