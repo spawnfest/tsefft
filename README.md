@@ -40,6 +40,46 @@ applications of FFT can be found on
 We will start with a baseline working implementation, perhaps
 `tsefft_0`, and work our way to more efficient implementations.
 
+## Project status
+
+The project started with the implementation of FFT in mind, however,
+due to various (self-inflicted) error, we have settled for a plain DFT
+implementation (DFT by correlation). This should be OK for small data
+sets, however, FFT is needed for scalibility.
+
+Of course, the project will be forked and developed further after
+Spawnfest.
+
+### Requirements
+
+The development environment used is as follows:
+
+* rebar3 3.12.0
+* Erlang/OTP 22.0 and 22.1
+* Ubuntu Linux 18.4, and ArchLinux
+* The Hex packages espace/0.5.0 and etsmgr/0.1.0 (required by espace)
+
+### To try it out
+
+Sadly, no proper demo script have been created! So, only manual
+commands is possible, e.g.:
+
+```
+$ rebar3 shell
+> espace:start().
+> tsefft_dft:dft_by_corr([-1.0, 1.0, 1.0, 1.0, 1.0, 1.0]).
+```
+
+Unfortunately, the inverse transform does not reproduce the original data :(
+
+```
+$ rebar3 shell
+> espace:start().
+> tsefft_dft:inverse_dft( tsefft_dft:dft_by_corr([-1.0, -1.0, -1.0, 1.0, 1.0, 1.0]) ).
+```
+
+To be investigate after Spawnfest!
+
 ## Build and tests
 
 As with most Erlang projects, `rebar3` is used for building and
@@ -49,6 +89,11 @@ testing the code:
 	$ rebar3 dialyzer
 	$ rebar3 eunit
 	$ rebar3 edoc
+
+## Documentation
+
+In addition to this README file, `edoc` based documentation can be
+produced with `rebar3 edoc`.
 
 ## Some explanations for the curious
 
